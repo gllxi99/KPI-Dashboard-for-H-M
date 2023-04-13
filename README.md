@@ -10,9 +10,9 @@ The API is built using Flask and Flask-RESTPlus, providing a set of endpoints fo
 
 ### Authentication Endpoints
 
-/register - This endpoint is responsible for user registration. It accepts a POST request with a JSON payload containing the "username" and "password". It returns a 201 status code on successful registration, and a 400 status code if the registration fails.
+/register - This endpoint is responsible for user registration. It accepts a POST request with a JSON payload containing the "username" and "password" and validates it against the users database. It returns a 201 status code on successful registration, and a 400 status code if the registration fails.
 
-/login - This endpoint is responsible for user login. It accepts a POST request with a JSON payload containing the "username" and "password". If the login is successful, it returns a 200 status code; otherwise, it returns a 400 status code.
+/login - This endpoint is responsible for user login. It accepts a POST request with a JSON payload containing the "username" and "password" and if valid stores it in the users table inside the database. If the username already exists, it returns an error. If the username doesn't exist, it proceeds with generating a new user
 
 
 ### Datframes Endpoints
