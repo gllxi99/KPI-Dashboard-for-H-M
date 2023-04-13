@@ -1,7 +1,0 @@
-pandas
-plotly
-streamlit
-sqlalchemy
-pymysql
-requests
-gunicorn
