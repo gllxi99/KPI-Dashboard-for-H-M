@@ -1,5 +1,4 @@
 # KPI-Dashboard-for-H&M
-H&M KPIs Project
 
 ## Project Overview
 
