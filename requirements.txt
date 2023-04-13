@@ -1,7 +1,7 @@
-Flask
-SQLAlchemy==1.4.27
-Flask-RESTful
-flask-restx
+pandas
+plotly
+streamlit
+sqlalchemy
 pymysql
-Werkzeug
+requests
 gunicorn
