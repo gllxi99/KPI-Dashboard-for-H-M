@@ -17,7 +17,7 @@ The API is built using Flask and Flask-RESTPlus, providing a set of endpoints fo
 
 ### Datframes Endpoints
 
--The following endpoints are used for querying customers, transactions and article.
+The following endpoints are used for querying customers, transactions and article.
  
 /customers to get all customers
 /transactions to get all transactions
