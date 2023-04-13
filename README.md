@@ -1,23 +1,21 @@
 # KPI-Dashboard-for-H&M
 H&M KPIs Project
 
-Project Overview
+## Project Overview
 
 This project consists of a backend REST API, a frontend Streamlit dashboard, and a SQL database hosted on Google Cloud.
 
-api.py
-API for Streamlit Dashboard
+## Backend
+The API is built using Flask and Flask-RESTPlus, providing a set of endpoints for user registration, login, and any other data-related operations. The backend connects to a database to store and manage user information and any other application data. It also implements a custom API key decorator to ensure that only authorized requests can access the API endpoints.
 
-This is a REST API that is built with Flask, SQLAlchemy, Flask-RESTx, and Werkzeug for password hashing and checking. The API serves a frontend Streamlit dashboard.
-
-Authentication Endpoints
+### Authentication Endpoints
 
 /register - This endpoint is responsible for user registration. It accepts a POST request with a JSON payload containing the "username" and "password". It returns a 201 status code on successful registration, and a 400 status code if the registration fails.
 
 /login - This endpoint is responsible for user login. It accepts a POST request with a JSON payload containing the "username" and "password". If the login is successful, it returns a 200 status code; otherwise, it returns a 400 status code.
 
 
-Datframes Endpoints
+### Datframes Endpoints
 
 -The following endpoints are used for querying customers, transactions and article.
  
@@ -30,9 +28,10 @@ Datframes Endpoints
 /transaction/productcategory to query transactions by product category. It adds the column of product_category to transactions based on article_id and selects only the necessary columns for the filtering and api calculation. Product_category wasn't originally in the dataframe of articles, but was created when uploading the dataframe to the mySql database. It was done by creating the new column "product_category" assigning the value "male" to Mensware and Sport articles, the value "female" to Ladiesware articles and "baby" to baby/children articles.
 
 
-Streamlit Application
+## Frontend
+The Streamlit application serves as the user interface for the project. It communicates with the backend API to perform user registration, login, and any other necessary data-related tasks
 
-streamlit.py
+### Main components
 
 get_session_state(): This function returns the current Streamlit session state. Streamlit's session state allows you to store and manage variables that persist across multiple runs of the application. This is useful for managing things like user authentication status.
 
