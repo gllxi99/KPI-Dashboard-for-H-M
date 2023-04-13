@@ -1,0 +1,7 @@
+Flask
+SQLAlchemy==1.4.27
+Flask-RESTful
+flask-restx
+pymysql
+Werkzeug
+gunicorn
